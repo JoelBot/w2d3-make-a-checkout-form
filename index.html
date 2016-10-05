@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <form method="post" action="###" enctype="multipart/form-data">
+  <form method="post" action="https://formspree.io/clickless@gmail.com" enctype="multipart/form-data">
     <div class="container">
       <div class="panel panel-default">
         <div class="panel-header">Contact Info</div>
@@ -22,7 +22,7 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="first_name">First Name</label>
-                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Ex: Benedict">
+                <input type="text" class="form-control required" id="first_name" name="first_name" placeholder="Ex: Benedict">
               </div>
             </div>
             <div class="col-sm-6">
@@ -190,24 +190,24 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-11">
               <div class="form-group">
                 <label for="cc_number">CC Number</label>
                 <input type="text" class="form-control" id="cc_number" name="cc_number" placeholder="Ex: 1234-5678-9012-3456">
               </div>
             </div>
-          </row>
-          <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-1">
               <div class="form-group">
                 <label for="cvv">CVV #</label>
-                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Ex: 123">
+                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123">
               </div>
             </div>
-            <div class="col-sm-6">
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
               <div class="form-group">
                 Exp:
-                <label for="cc_exp_month">Month</label>
+                <label for="cc_exp_month"> Month</label>
                 <select name="cc_exp_month" id="cc_exp_month">
                   <option value="01">01</option>
                   <option value="02">02</option>
@@ -222,25 +222,44 @@
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
-                <label for="cc_exp_year">Month</label>
+                <label for="cc_exp_year"> Year</label>
                 <select name="cc_exp_year" id="cc_exp_year">
-                  <option value="2016">2016</option>
-                  <option value="2017">2017</option>
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                  <option value="2023">2023</option>
-                  <option value="2024">2024</option>
+                  <option value="16">2016</option>
+                  <option value="17">2017</option>
+                  <option value="18">2018</option>
+                  <option value="19">2019</option>
+                  <option value="20">2020</option>
+                  <option value="21">2021</option>
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
                 </select>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div class="panel-header"></div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+              <div class="form-group text-right tab-order">
+                <button class="btn btn-success btn-lg">Submit</button>
+              </div>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+              <div class="form-group">
+                <button class="btn btn-default btn-sm">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </form>
+  </div>
+</div>
+</form>
 
 </body>
 </html>

@@ -22,13 +22,13 @@
             <div class="col-sm-3">
               <div class="form-group">
                 <label for="first_name">First Name</label>
-                <input type="text" class="form-control required" id="first_name" name="first_name" placeholder="Ex: Benedict">
+                <input type="text" required class="form-control" id="first_name" name="first_name" placeholder="Ex: Benedict">
               </div>
             </div>
             <div class="col-sm-3">
               <div class="form-group">
                 <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Ex: Cumberbach">
+                <input type="text" required class="form-control" id="last_name" name="last_name" placeholder="Ex: Cumberbach">
               </div>
             </div>
             <!-- </div>
@@ -36,7 +36,7 @@
             <div class="col-sm-3">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Ex: GetUrBachON@gmail.com">
+                <input type="email" required class="form-control" id="email" name="email" placeholder="Ex: GetUrBachON@gmail.com">
               </div>
             </div>
             <div class="col-sm-3">
@@ -55,7 +55,7 @@
             <div class="col-sm-5">
               <div class="form-group">
                 <label for="ship_street">Street</label>
-                <input type="text" class="form-control" id="ship_street" name="ship_street" placeholder="Ex: 42 Cumberbach Blvd">
+                <input type="text" required class="form-control" id="ship_street" name="ship_street" placeholder="Ex: 42 Cumberbach Blvd">
               </div>
             </div>
             <div class="col-sm-1">
@@ -69,19 +69,19 @@
             <div class="col-sm-2">
               <div class="form-group">
                 <label for="ship_city">City</label>
-                <input type="text" class="form-control" id="ship_city" name="ship_city" placeholder="Ex: Puyallup">
+                <input type="text" required class="form-control" id="ship_city" name="ship_city" placeholder="Ex: Puyallup">
               </div>
             </div>
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="ship_zip">Zipcode</label>
-                <input type="text" class="form-control" id="ship_zip" name="ship_zip" placeholder="90210">
+                <input type="text" required class="form-control" id="ship_zip" name="ship_zip" placeholder="90210">
               </div>
             </div>
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="ship_state">State</label> <br />
-                <select name="ship_state" id="ship_state">
+                <select name="ship_state" required id="ship_state">
                   <option>Alabama</option>
                   <option>Indiana</option>
                   <option>Nevada</option>
@@ -94,7 +94,7 @@
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="ship_country">Country</label> <br />
-                <select name="ship_country" id="ship_country">
+                <select name="ship_country" required id="ship_country">
                   <option>Canada</option>
                   <option>'Merica</option>
                   <option>Mexico</option>
@@ -192,13 +192,13 @@
             <div class="col-sm-3">
               <div class="form-group">
                 <label for="cc_number">CC Number</label>
-                <input type="text" class="form-control" id="cc_number" name="cc_number" placeholder="Ex: 1234-5678-9012-3456">
+                <input type="text" required class="form-control" id="cc_number" name="cc_number" placeholder="Ex: 1234-5678-9012-3456">
               </div>
             </div>
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="cvv">CVV #</label>
-                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123">
+                <input type="text" required class="form-control" id="cvv" name="cvv" placeholder="123">
               </div>
             </div>
             <!-- </div>
@@ -206,7 +206,7 @@
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="cc_exp_month"> Month</label>
-                <select name="cc_exp_month" id="cc_exp_month">
+                <select name="cc_exp_month" id="cc_exp_month" required>
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -225,7 +225,7 @@
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="cc_exp_year"> Year</label>
-                <select name="cc_exp_year" id="cc_exp_year">
+                <select name="cc_exp_year" id="cc_exp_year" required>
                   <option value="16">2016</option>
                   <option value="17">2017</option>
                   <option value="18">2018</option>

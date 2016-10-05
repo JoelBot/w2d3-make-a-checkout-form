@@ -8,6 +8,7 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 </head>
 <body>
 
@@ -67,14 +68,14 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="form-group">
-                <label for="text">City</label>
-                <input type="ship_city" class="form-control" id="ship_city" name="ship_city" placeholder="Ex: Puyallup">
+                <label for="ship_city">City</label>
+                <input type="text" class="form-control" id="ship_city" name="ship_city" placeholder="Ex: Puyallup">
               </div>
             </div>
             <div class="col-sm-4">
               <div class="form-group">
-                <label for="text">Zipcode</label>
-                <input type="ship_zip" class="form-control" id="ship_zip" name="ship_zip" placeholder="Ex: Puyallup">
+                <label for="ship_zip">Zipcode</label>
+                <input type="text" class="form-control" id="ship_zip" name="ship_zip" placeholder="Ex: 90210">
               </div>
             </div>
             <div class="col-sm-2">
@@ -101,11 +102,143 @@
                 </select>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div class="panel-header">Billing Info</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="billing_same_as_shipping">Same as shipping address? </label>
+                <input type="hidden" name="billing_same_as_shipping" value="no" />
+                <input type="checkbox" name="billing_same_as_shipping" value="yes" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-11">
+              <div class="form-group">
+                <label for="billing_street">Street</label>
+                <input type="text" class="form-control" id="billing_street" name="billing_street" placeholder="Ex: 42 Cumberbach Blvd">
+              </div>
+            </div>
+            <div class="col-sm-1">
+              <div class="form-group">
+                <label for="billing_apt">APT</label>
+                <input type="text" class="form-control" id="billing_apt" name="billing_apt" placeholder="Ex: B">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="billing_city">City</label>
+                <input type="text" class="form-control" id="billing_city" name="billing_city" placeholder="Ex: Puyallup">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="billing_zip">Zipcode</label>
+                <input type="text" class="form-control" id="billing_zip" name="billing_zip" placeholder="Ex: 90210">
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="billing_state">State</label> <br />
+                <select name="billing_state" id="billing_state">
+                  <option>Alabama</option>
+                  <option>Indiana</option>
+                  <option>Nevada</option>
+                  <option>Vermont</option>
+                  <option>Washington</option>
+                </select>
 
+              </div>
+
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label for="billing_country">Country</label> <br />
+                <select name="billing_country" id="billing_country">
+                  <option>Canada</option>
+                  <option>'Merica</option>
+                  <option>Mexico</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-header">Payment Info</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="radio">
+                <label class="radio-inline">
+                  <input type="radio" name="cc_type" id="cc_type" value="visa"><i class="fa fa-cc-visa fa-5x" aria-hidden="true"></i>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="cc_type" id="cc_type" value="mastercard"><i class="fa fa-cc-mastercard fa-5x" aria-hidden="true"></i>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="cc_type" id="cc_type" value="amex"><i class="fa fa-cc-amex fa-5x" aria-hidden="true"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="cc_number">CC Number</label>
+                <input type="text" class="form-control" id="cc_number" name="cc_number" placeholder="Ex: 1234-5678-9012-3456">
+              </div>
+            </div>
+          </row>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="cvv">CVV #</label>
+                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Ex: 123">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                Exp:
+                <label for="cc_exp_month">Month</label>
+                <select name="cc_exp_month" id="cc_exp_month">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <label for="cc_exp_year">Month</label>
+                <select name="cc_exp_year" id="cc_exp_year">
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </form>
 

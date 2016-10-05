@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/form.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<form method="post" action="" enctype="multipart/form-data" method="POST">
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Contact Information
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="sr-only" for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name" class="form-control" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" class="form-control" />
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <label>
+                <input type="hidden" name="send_me_stuff" value="no" />
+                <input type="checkbox" name="send_me_stuff" value="yes"> Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="price">Price</label>
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" id="price" name="price" class="form-control"/>
+                <div class="input-group-addon">.00</div>
+              </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="form-group">
+
+      <label for="blog_post">Blog Post</label>
+      <textarea rows="10" class="form-control" id="blog_post" name="blog_post"></textarea>
+    </div>
+
+<div class="form-group">
+
+  <label for="country">Country</label>
+  <select class="form-control" id="country" name="country">
+<optgroup label="Where I'm at">
+    <option value="here">
+      Here
+    </option>
+    <option value="there">
+      There
+    </option>
+  </select>
+</div>
+
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6">
+        <div class="form-group text-right tab-order">
+          <button class="btn btn-success btn-lg">Submit</button>
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-pull-6">
+        <div class="form-group">
+          <button class="btn btn-default btn-sm">Cancel</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</form>
+<!-- <form method="post" action="" enctype="multipart/form-data">
+<label for="first-name">First Name: </label> <br />
+<input type="text" class="form-control" id="first-name" name="first_name" readonly value="" placeholder="Kensington"/>
+<br /><br />
+<label>
+<input type="hidden" name="optin" value="no" />
+<input type="checkbox" id="optin" name="optin" value="yes" />
+</label> Recieve Spam Emails
+</form>
+
+<h4>Pick the correct answer!</h4>
+<label><input type="radio" name="quizz" value="a"/> A</label> <br /><br />
+<label><input type="radio" name="quizz" value="b"/> B</label> <br /><br />
+<label><input type="radio" name="quizz" value="c"/> C</label> <br /><br />
+<label><input type="radio" name="quizz" value="all" checked disabled/> All of the above</label> <br /><br />
+
+<label for="country">Country</label> <br />
+<select name="country" id="country">
+<optgroup label="North America">
+<option value="US">US</option>
+<option value="CA">Canada</option>
+
+</optgroup>
+<optgroup label="Non-Earth">
+<option value="SPC" selected>Space</option>
+</optgroup>
+</select>
+<br />
+<br />
+<br />
+<textarea name="blog_post" rows="10" cols="80" placeholder="Enter your life story"></textarea>
+
+<br />
+<br />
+<br />
+<button type="button">
+Submit
+</button> <!-- button prefered because icons and words can be nested-->
+<!--<input type="submit" calue="Submit" /> -->
+</body>
+</html>

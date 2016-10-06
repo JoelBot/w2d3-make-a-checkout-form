@@ -197,7 +197,8 @@
             </div>
             <div class="col-sm-1">
               <div class="form-group">
-                <label for="cvv">CVV #</label>
+                <label for="cvv">CVV</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-info-circle" aria-hidden="true" data-toggle="modal" data-target="#cvv_modal"></i>
                 <input type="text" required class="form-control" id="cvv" name="cvv" placeholder="123">
               </div>
             </div>
@@ -262,6 +263,21 @@
   </div>
 </div>
 </form>
+<div class="modal fade" id="cvv_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <h4 class="modal-title">Pictures!</h4>
+      <div class="modal-body">
+        <img src="http://unsplash.it/300?image=987" alt="Something comprised of atoms" width="100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true" data-dismiss="modal">×</span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 
 </body>
 </html>

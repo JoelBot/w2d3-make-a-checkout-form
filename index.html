@@ -78,10 +78,11 @@
                 <input type="text" required class="form-control" id="ship_zip" name="ship_zip" placeholder="90210">
               </div>
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="ship_state">State</label> <br />
                 <select name="ship_state" required id="ship_state">
+                  <option disabled selected value>-- Select a value --</option>
                   <option>Alabama</option>
                   <option>Indiana</option>
                   <option>Nevada</option>
@@ -91,10 +92,11 @@
 
               </div>
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="ship_country">Country</label> <br />
                 <select name="ship_country" required id="ship_country">
+                  <option disabled selected value>-- Select a value --</option>
                   <option>Canada</option>
                   <option>'Merica</option>
                   <option>Mexico</option>
@@ -110,9 +112,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="form-group">
-                <label for="billing_same_as_shipping">Same as shipping address? </label>
-                <input type="hidden" name="billing_same_as_shipping" value="no" />
-                <input type="checkbox" name="billing_same_as_shipping" value="yes" />
+                <label for="billing_same_as_shipping">Same as shipping address? </label>                <input type="checkbox" name="billing_same_as_shipping" value="yes" />
               </div>
             </div>
           </div>
@@ -143,10 +143,11 @@
                 <input type="text" class="form-control" id="billing_zip" name="billing_zip" placeholder="90210">
               </div>
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="billing_state">State</label> <br />
                 <select name="billing_state" id="billing_state">
+                  <option disabled selected value>-- Select a value --</option>
                   <option>Alabama</option>
                   <option>Indiana</option>
                   <option>Nevada</option>
@@ -157,10 +158,11 @@
               </div>
 
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="billing_country">Country</label> <br />
                 <select name="billing_country" id="billing_country">
+                  <option disabled selected value>-- Select a value --</option>
                   <option>Canada</option>
                   <option>'Merica</option>
                   <option>Mexico</option>
@@ -177,13 +179,13 @@
             <div class="col-sm-12">
               <div class="radio text-primary">
                 <label class="radio-inline">
-                  <input type="radio" name="cc_type" id="cc_type" value="visa"><i class="fa fa-cc-visa fa-5x" aria-hidden="true"></i>
+                  <input type="radio" name="cc_type" value="visa"><i class="fa fa-cc-visa fa-5x" aria-hidden="true"></i>
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="cc_type" id="cc_type" value="mastercard"><i class="fa fa-cc-mastercard fa-5x" aria-hidden="true"></i>
+                  <input type="radio" name="cc_type" value="mastercard"><i class="fa fa-cc-mastercard fa-5x" aria-hidden="true"></i>
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="cc_type" id="cc_type" value="amex"><i class="fa fa-cc-amex fa-5x" aria-hidden="true"></i>
+                  <input type="radio" name="cc_type" value="amex"><i class="fa fa-cc-amex fa-5x" aria-hidden="true"></i>
                 </label>
               </div>
             </div>
@@ -198,16 +200,16 @@
             <div class="col-sm-1">
               <div class="form-group">
                 <label for="cvv">CVV</label>
-                &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-info-circle" aria-hidden="true" data-toggle="modal" data-target="#cvv_modal"></i>
                 <input type="text" required class="form-control" id="cvv" name="cvv" placeholder="123">
               </div>
             </div>
             <!-- </div>
             <div class="row"> -->
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="cc_exp_month"> Month</label>
                 <select name="cc_exp_month" id="cc_exp_month" required>
+                  <option disabled selected value>-- Select a value --</option>
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -223,10 +225,11 @@
                 </select>
               </div>
             </div>
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <div class="form-group">
                 <label for="cc_exp_year"> Year</label>
                 <select name="cc_exp_year" id="cc_exp_year" required>
+                  <option disabled selected value>-- Select a value --</option>
                   <option value="16">2016</option>
                   <option value="17">2017</option>
                   <option value="18">2018</option>
@@ -260,24 +263,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-</form>
-<div class="modal fade" id="cvv_modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      <h4 class="modal-title">Pictures!</h4>
-      <div class="modal-body">
-        <img src="http://unsplash.it/300?image=987" alt="Something comprised of atoms" width="100%">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="button" class="close" aria-label="Close"><span aria-hidden="true" data-dismiss="modal">×</span></button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div>
-
+  </form>
 </body>
 </html>
